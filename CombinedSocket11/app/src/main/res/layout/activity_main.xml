@@ -1,0 +1,58 @@
+<!-- res/layout/activity_main.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:id="@+id/tvIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="IP: " />
+
+    <TextView
+        android:id="@+id/tvPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvIP"
+        android:layout_marginTop="10dp"
+        android:text="Port: " />
+
+    <ToggleButton
+        android:id="@+id/btnToggleMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPort"
+        android:layout_marginTop="20dp"
+        android:textOff="Client"
+        android:textOn="Server" />
+    <TextView
+        android:id="@+id/tvMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnToggleMode"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMessages"
+        android:layout_marginTop="20dp"
+        android:hint="Enter message" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMessage"
+        android:layout_marginTop="10dp"
+        android:text="Send" />
+
+
+</RelativeLayout>
